@@ -10,8 +10,8 @@ body{
 }
 
 .sidebar{
-	width: 30%;
-	border-right: 3px solid #5B5C60;
+	width: 18%;
+	border-right: 3px solid #B2B3B5;
 	height: 150vh;
 	position: fixed;
 	top: 0;
@@ -22,6 +22,7 @@ body{
 .sidebar .header{
 	padding-top: 20px;
 	padding-left: 30px;
+	font-size: 25px;
 }
 
 .sidebar ul{
@@ -37,8 +38,13 @@ body{
 	font-size: 18px;
 }
 
+.sidebar a{
+	text-decoration: none;
+	color: black;
+}
+
 .content{
-	width: 65%;
+	width: 78%;
 	float: right;
 	margin-right: 20px;
 	margin-top: 40px;
@@ -60,4 +66,94 @@ code{
 	display: block;
 	width: 90%;
 	padding: 20px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+/* start of large tablet styles */
+	.sidebar{
+	width:30%;
+	border-right: 3px solid #B2B3B5;
+	height: 150vh;
+	position: fixed;
+	top: 0;
+	background-color: white;
+	float: left;
+}
+
+	.content{
+	width: 65%;
+	float: right;
+	margin-right: 20px;
+	margin-top: 40px;
+	margin-bottom: 100px;
+}
+	
+}
+
+@media screen and (max-width: 767px) {
+	.sidebar{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	background-color: white;
+	float: none;
+	height: 207px;
+}
+
+	.sidebar ul {
+    border: 1px solid;
+    height: 350px;
+    overflow: scroll;
+  }
+
+  	.header{
+  		text-align: center;
+  		border: none;
+  	}
+
+	.content{
+	padding-top: 350px;
+	width: 90%;
+	margin: auto;
+	float: none;
+}
+
+}
+
+
+@media screen and (max-width: 479px) {
+/* start of phone styles */
+.sidebar{
+	width: 99%;
+	position: absolute;
+	top: 0;
+	background-color: white;
+	float: none;
+	height: 207px;
+}
+
+	.sidebar ul {
+    border: 1px solid;
+    height: 350px;
+    overflow: scroll;
+  }
+
+  	.header{
+  		text-align: center;
+  		border: none;
+  	}
+
+	.content{
+	padding-top: 350px;
+	width: 90%;
+	margin: auto;
+	float: none;
+}
 }
